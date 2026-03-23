@@ -1,7 +1,7 @@
-import style from "./Project.module.css";
+import style from "./Projects.module.css";
 
-const Project = () => {
+const Projects = () => {
   return <section id={style.project}></section>;
 };
 
-export default Project;
+export default Projects;

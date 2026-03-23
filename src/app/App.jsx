@@ -4,7 +4,7 @@ import Navbar from "../components/navbar/Navbar";
 import About from "./about/About";
 import Tech from "./tech/Tech";
 import Experience from "./experience/Experience";
-import Project from "./projects/Projects";
+import Projects from "./projects/Projects";
 
 const App = () => {
   return (
@@ -13,9 +13,9 @@ const App = () => {
       <About />
       <Tech />
       <Experience />
-      <Project />
+      <Projects />
     </section>
   );
 };
 
-return App;
+export default App;
