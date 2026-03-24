@@ -1,0 +1,38 @@
+#navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+#navbar div {
+  display: flex;
+  justify-content: space-evenly;
+  grid-column: 2;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--text-dark-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: transform 0.25s ease;
+  outline: none;
+}
+
+#navbar a:hover,
+#navbar a:focus {
+  color: var(--text-color);
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+  #navbar {
+    grid-template-columns: 1fr;
+  }
+  #navbar div {
+    grid-column: 1;
+  }
+}
