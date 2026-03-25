@@ -10,7 +10,7 @@
   text-decoration: none;
   color: var(--text-dark-color);
   font-weight: bold;
-  font-size: 2vw;
+  font-size: clamp(0.6rem, 1.5vw, 1.5rem);
   text-transform: uppercase;
   transition: transform 0.25s ease;
   outline: none;

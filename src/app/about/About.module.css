@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: min-content min-content;
-  gap: 2rem;
+  gap: 2rem 1rem;
 }
 
 .about__navbar {
@@ -21,12 +21,13 @@
 .about__content {
   grid-row: 2;
   grid-column: 2;
+  padding: 0rem clamp(2rem, 10vw, 5rem);
 }
 
 .about__description {
   grid-row: 3;
   grid-column: 2;
-  padding: 0rem 3em;
+  padding: 0rem clamp(2rem, 10vw, 5rem);
   font-size: 1.5rem;
   height: 100%;
   color: var(--text-color);
@@ -41,11 +42,14 @@
 
 @media (max-width: 1200px) {
   #about {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
   }
   .about__navbar {
     grid-row: 1;
     grid-column: span 2;
+    height: max-content;
+    width: 100%;
+    background-color: var(--text-white-color);
   }
   .about__image {
     grid-column: 1;
@@ -64,6 +68,7 @@
   }
   .about__image {
     grid-column: 1;
+    justify-self: center;
     grid-row: 2;
   }
 
