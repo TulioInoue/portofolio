@@ -7,11 +7,25 @@ import Content from "./components/content/Content";
 const About = () => {
   return (
     <section id={style.about}>
-      <Navbar />
-      <section id={style.about__content}>
+      <div className={style.about__navbar}>
+        <Navbar />
+      </div>
+      <div className={style.about__image}>
         <Image />
+      </div>
+      <div className={style.about__content}>
         <Content />
-      </section>
+      </div>
+      <div className={style.about__description}>
+        <p>
+          I am a technology and science enthusiast with experience in
+          <span> data science</span>, <span> machine learning</span>, and
+          <span> full stack development</span>. My goal is to create intelligent
+          and scalable solutions,
+          <span> integrating artificial intelligence into systems </span>
+          to optimize processes and drive business growth.
+        </p>
+      </div>
     </section>
   );
 };

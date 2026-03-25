@@ -8,11 +8,11 @@
 }
 
 .content__links {
-  padding: 0rem 2rem;
+  padding: 1rem 4rem;
   display: flex;
   justify-content: end;
   gap: 2rem;
-  font-size: 3rem;
+  font-size: clamp(2rem, 3vw, 3rem);
 }
 
 .content__links a {
@@ -29,29 +29,21 @@
 }
 
 .content__header {
-  padding: 0rem 5rem;
+  padding: 0rem 4rem;
 }
 
 .content__header h2 {
-  font-size: 4rem;
+  font-size: clamp(3rem, 6vw, 6rem);
   color: var(--primary-color);
 }
 
 .content__header h3 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 3vw, 3rem);
   color: var(--tertiary-color);
 }
 
-.content__text {
-  padding: 0rem 8rem;
-  font-size: 1.5rem;
-  height: 100%;
-  color: var(--text-color);
-  line-height: 3rem;
-  text-align: justify;
-}
-
-.content__text span {
-  color: var(--tertiary-color);
-  font-weight: bold;
+@media (max-width: 1000px) {
+  .content__text {
+    display: none;
+  }
 }

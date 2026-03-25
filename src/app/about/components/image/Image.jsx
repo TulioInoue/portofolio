@@ -3,7 +3,11 @@ import style from "./Image.module.css";
 const Image = () => {
   return (
     <section id={style.image}>
-      <img className={style.image__image} src="tulio-hero.png" alt="tulio" />
+      <span className={style.image__green}></span>
+      <div className={style.image__image}>
+        <img src="tulio.png" alt="tulio" />
+      </div>
+      <span className={style.image__margenta}></span>
     </section>
   );
 };
