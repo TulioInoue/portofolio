@@ -1,0 +1,27 @@
+.card__color {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 5px solid var(--text-dark-color);
+  border-radius: 5px;
+}
+
+.card__color_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card__color_icon i,
+.card__color_icon img {
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+}
+
+.card__color_text::first-letter {
+  text-transform: uppercase;
+}

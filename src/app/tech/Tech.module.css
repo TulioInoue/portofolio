@@ -1,0 +1,38 @@
+#tech {
+  width: 100%;
+  padding: 2rem clamp(2rem, 10vw, 5rem);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tech__header {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 2vw, 3rem);
+}
+
+.tech__body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tech__body__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tech__body__cards__field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech__body__cards_field_content {
+  width: 100%;
+}
