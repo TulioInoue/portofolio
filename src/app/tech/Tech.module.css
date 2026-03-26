@@ -31,8 +31,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+
+.tech__body__cards__field h4 {
+  font-size: 2rem;
 }
 
 .tech__body__cards_field_content {
   width: 100%;
+  gap: 1rem;
+  display: flex;
+}
+
+.tech__body__bigcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .tech__body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .tech__body__cards_field_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -1,11 +1,65 @@
-.card__color {
+#card__is_not_selected {
+  transform: unset;
+  box-shadow: unset;
+}
+
+.card__green__color,
+.card__orange__color,
+.card__margenta__color {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  border: 5px solid var(--text-dark-color);
+  gap: 1rem;
+  color: var(--text-white-color);
+  border: none;
+  border: 4px solid var(--text-color);
   border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+}
+
+.card__green__color {
+  background-color: var(--primary-light-color);
+}
+
+.card__orange__color {
+  background-color: var(--tertiary-light-color);
+}
+
+.card__margenta__color {
+  background-color: var(--secondary-light-color);
+}
+
+#card__is_selected.card__green__color,
+.card__green__color:hover {
+  background-color: var(--primary-lighter-color);
+}
+
+#card__is_selected.card__orange__color,
+.card__orange__color:hover {
+  background-color: var(--tertiary-lighter-color);
+}
+
+#card__is_selected.card__margenta__color,
+.card__margenta__color:hover {
+  background-color: var(--secondary-lighter-color);
+}
+
+#card__is_selected {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0px 10px 10px var(--text-color);
+}
+
+.card__green__color:hover,
+.card__orange__color:hover,
+.card__margenta__color:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 10px 10px var(--text-color);
 }
 
 .card__color_icon {
@@ -13,15 +67,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-size: clamp(2rem, 100%, 3rem);
 }
 
 .card__color_icon i,
 .card__color_icon img {
   display: flex;
   justify-content: center;
-  width: 2rem;
+  width: clamp(2rem, 100%, 3rem);
 }
 
 .card__color_text::first-letter {
   text-transform: uppercase;
+}
+
+.card__color_text {
+  font-size: 1rem;
 }

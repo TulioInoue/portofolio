@@ -1,0 +1,47 @@
+#bigcard {
+  width: clamp(300px, 100%, 500px);
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  color: var(--text-black-color);
+  padding: 2rem;
+  border-radius: 2rem;
+  animation: bigCardShow 0.25s ease-in-out;
+}
+
+@keyframes bigCardShow {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  /* 90% {
+    transform: scale(1.1);
+  } */
+  /* 100% {
+    transform: scale(1);
+  } */
+}
+
+.bigcard__header {
+  font-size: 5rem;
+}
+
+.bigcard__header img {
+  width: 5rem;
+}
+
+.bigcard__header p {
+  font-size: 2rem;
+}
+
+.bigcard__header p::first-letter {
+  text-transform: uppercase;
+}
+
+.bigcard__body {
+  font-weight: 200;
+  line-height: 5rem;
+  font-size: 2rem;
+}

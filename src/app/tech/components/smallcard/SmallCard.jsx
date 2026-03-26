@@ -1,8 +1,25 @@
 import style from "./SmallCard.module.css";
 
-const SmallCard = ({ text, icon, color, isSVG }) => {
+const SmallCard = ({
+  text,
+  icon,
+  color,
+  isSVG,
+  isSelected,
+  onClickFunction,
+}) => {
   return (
-    <div className={style.card__color}>
+    <button
+      onClick={() => onClickFunction()}
+      className={
+        color === "green"
+          ? style.card__green__color
+          : color === "margenta"
+            ? style.card__margenta__color
+            : style.card__orange__color
+      }
+      id={isSelected ? style.card__is_selected : null}
+    >
       <div className={style.card__color_icon}>
         {isSVG ? (
           <img src={icon} alt={`icon_${text}`} />
@@ -11,7 +28,7 @@ const SmallCard = ({ text, icon, color, isSVG }) => {
         )}
       </div>
       <div className={style.card__color_text}>{text}</div>
-    </div>
+    </button>
   );
 };
 
