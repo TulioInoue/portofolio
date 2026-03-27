@@ -8,16 +8,10 @@ import Projects from "./projects/Projects";
 const App = () => {
   return (
     <section id={style.app}>
-      <section id={style.app__content}>
-        <About />
-        <Tech />
-        <Experience />
-        <Projects />
-      </section>
-      <section id={style.app__background}>
-        <span className={style.app__background_first}></span>
-        <span className={style.app__background_last}></span>
-      </section>
+      <About />
+      <Tech />
+      <Experience />
+      <Projects />
     </section>
   );
 };

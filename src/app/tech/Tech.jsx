@@ -57,19 +57,31 @@ const Tech = () => {
         </div>
         <div className={style.tech__body__bigcard}>
           {cardSelected.id ? (
-            <BigCard
-              key={cardSelected.id}
-              {...cards_content[cardSelected.field].find(
-                (card) => card.id === cardSelected.id,
-              )}
-            />
+            <div
+              className={style.tech__body__bigcard_set}
+              onClick={() =>
+                setCardSelected({
+                  field: "",
+                  id: null,
+                })
+              }
+            >
+              <BigCard
+                key={cardSelected.id}
+                {...cards_content[cardSelected.field].find(
+                  (card) => card.id === cardSelected.id,
+                )}
+              />
+            </div>
           ) : (
-            <BigCard
-              description="Click a button to know more about which tools I use."
-              title="Unknown"
-              text="My teach stack"
-              img="icons/colorfull/unknown2.svg"
-            />
+            <div className={style.tech__body__bigcard_unset}>
+              <BigCard
+                description="Click a button to know more about which tools I use."
+                title="Unknown"
+                text="My teach stack"
+                img="icons/colorfull/unknown2.svg"
+              />
+            </div>
           )}
         </div>
       </div>

@@ -76,7 +76,7 @@ const cards_content = {
       isSVG: false,
       color: "orange",
       description:
-        "Programming language that adds interactivity to the frontend and can also create servers.",
+        "Programming language that adds interactivity to the frontend and logic to the server.",
     },
     {
       id: 8,
