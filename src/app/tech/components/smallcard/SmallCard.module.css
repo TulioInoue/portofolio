@@ -74,7 +74,9 @@
 .card__color_icon img {
   display: flex;
   justify-content: center;
-  width: clamp(2rem, 100%, 3rem);
+  /* width: clamp(2rem, 100%, 3rem); */
+  width: 32px;
+  height: 32px;
 }
 
 .card__color_text::first-letter {

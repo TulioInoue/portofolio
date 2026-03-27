@@ -1,0 +1,29 @@
+.educationalCard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: var(--text-gray-color);
+  border-radius: 20px;
+}
+
+.educationalCard__header img {
+  width: 100px;
+  height: 100px;
+}
+
+.educationalCard__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.educationalCard__body_name {
+  font-size: 1.5rem;
+}
+
+.educationalCard__body_degree,
+.educationalCard__body span {
+  font-size: 0.75rem;
+}
