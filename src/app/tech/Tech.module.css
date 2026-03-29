@@ -1,6 +1,6 @@
 #tech {
   width: 100%;
-  padding: 2rem clamp(2rem, 10vw, 5rem);
+  padding: 2rem clamp(2rem, 10vw, 10rem);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
@@ -36,6 +36,7 @@
 
 .tech__body__cards__field h4 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .tech__body__cards_field_content {

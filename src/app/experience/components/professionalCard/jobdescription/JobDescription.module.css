@@ -1,0 +1,24 @@
+.jobdescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobdescription__position {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.jobdescription__date {
+  font-size: 1.5rem;
+}
+
+.jobdescription__achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  list-style: none;
+}

@@ -1,7 +1,7 @@
 const educationalExperience = [
   {
     id: 1,
-    name: "USP - University of São Paulo",
+    name: "University of São Paulo",
     degree: "undergraduate degree in mathematics",
     img: "images/institution/usp.jpg",
     startDate: "2018/02",
@@ -9,9 +9,8 @@ const educationalExperience = [
   },
   {
     id: 2,
-    name: "FNAT - Foundation for Business, Analytics and Technology",
-    degree:
-      "Postgraduate degree in Data Analytics and Artificial Intelligence Applied to Business, Mathematics and Computer Science",
+    name: "Foundation for Business, Analytics and Technology",
+    degree: "Postgraduate degree in Data Analytics and Artificial Intelligence", // Applied to Business, Mathematics and Computer Science
     img: "/images/institution/fnat.jpg",
     startDate: "2026/01",
     endDate: "2026/12",

@@ -27,6 +27,11 @@ const Experience = () => {
       </div>
       <div className={style.experience__professional}>
         <h4>professional</h4>
+        <div className={style.experience__professional__cards}>
+          {professionalExperience.map((experience) => (
+            <ProfessionalCard key={experience.id} {...experience} />
+          ))}
+        </div>
       </div>
     </section>
   );

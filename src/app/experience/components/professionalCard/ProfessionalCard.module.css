@@ -1,0 +1,29 @@
+.professionalCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.professionalCard__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.professionalCard__header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.professionalCard__header p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.professionalCard__descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
