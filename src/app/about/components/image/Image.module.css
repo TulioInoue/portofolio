@@ -1,16 +1,18 @@
 #image {
-  width: 100%;
+  min-height: 250px;
   height: 100%;
-  display: grid;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image__green,
 .image__margenta,
 .image__image {
-  grid-area: stack;
-  align-self: center;
+  position: absolute;
+  display: block;
   justify-self: center;
-  position: relative;
 }
 
 .image__green,
@@ -29,10 +31,11 @@
   background-color: var(--primary-color);
   border-radius: 10px;
   rotate: -30deg;
-  top: -150px;
-  left: -125px;
-  height: clamp(100px, 17.5vw, 400px);
-  width: clamp(100px, 17.5vw, 400px);
+  height: 300px;
+  width: 300px;
+  bottom: 15%;
+  right: clamp(150px, 5vw, 300px);
+  left: 0px;
   z-index: 1;
   animation: greenSpanAnimation 15s ease-in-out infinite;
 }
@@ -40,51 +43,41 @@
 .image__image {
   z-index: 2;
   animation: imageAnimation 15s ease-in-out infinite;
-  bottom: clamp(0px, 1vw, 40px);
 }
 
 .image__image img {
   background-color: var(--tertiary-color);
   border-radius: 20%;
-  width: clamp(100px, 20vw, 250px);
+  width: 300px;
 }
 
 .image__margenta {
   background-color: var(--secondary-color);
   border-radius: 20px;
-  height: clamp(100px, 15vw, 300px);
-  width: clamp(100px, 15vw, 300px);
+  height: 275px;
+  width: 275px;
+  right: 0px;
+  left: clamp(150px, 10vw, 300px);
+  top: 15%;
   rotate: 5deg;
-  top: 60px;
-  right: -100px;
-  z-index: 0;
+  z-index: 1;
   animation: margentaSpanAnimation 20s ease-in-out infinite;
 }
 
-@media (max-width: 1200px) {
-  .image__green {
-    top: -60px;
-    left: -20px;
-  }
-
-  .image__margenta {
-    left: 50px;
-  }
-}
-
 @media (max-width: 800px) {
-  #image {
-    display: grid;
-  }
-
   .image__green {
-    top: -40px;
-    left: -30px;
+    height: 175px;
+    width: 175px;
+    bottom: 25%;
   }
-
+  .image__image img {
+    width: 150px;
+  }
   .image__margenta {
-    top: 20px;
-    left: 50px;
+    height: 175px;
+    width: 175px;
+    top: 20%;
+    /* right: 30px; */
   }
 }
 

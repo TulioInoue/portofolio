@@ -28,13 +28,13 @@
 }
 
 .content__header h2 {
-  font-size: clamp(3rem, 4vw, 6rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   color: var(--primary-color);
   text-align: end;
 }
 
 .content__header h3 {
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   color: var(--tertiary-color);
   text-align: end;
 }

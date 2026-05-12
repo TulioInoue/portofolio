@@ -10,11 +10,13 @@ const About = () => {
       <div className={style.about__navbar}>
         <Navbar />
       </div>
-      <div className={style.about__image}>
-        <Image />
-      </div>
-      <div className={style.about__content}>
-        <Content />
+      <div className={style.about__header}>
+        <div className={style.about__image}>
+          <Image />
+        </div>
+        <div className={style.about__content}>
+          <Content />
+        </div>
       </div>
       <div className={style.about__description}>
         <p>
