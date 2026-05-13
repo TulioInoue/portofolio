@@ -10,7 +10,7 @@ const About = () => {
       <div className={style.about__navbar}>
         <Navbar />
       </div>
-      <div className={style.about__header}>
+      <div className={style.about__header} id="about">
         <div className={style.about__image}>
           <Image />
         </div>

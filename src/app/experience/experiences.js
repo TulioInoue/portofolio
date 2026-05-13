@@ -1,16 +1,16 @@
 const educationalExperience = [
   {
     id: 1,
-    name: "University of São Paulo",
-    degree: "undergraduate degree in mathematics",
+    degree: "Undergraduate",
+    type: "Mathematics",
     img: "images/institution/usp.jpg",
     startDate: "2018/02",
     endDate: "2022/06",
   },
   {
     id: 2,
-    name: "Foundation for Business, Analytics and Technology",
-    degree: "Postgraduate degree in Data Analytics and Artificial Intelligence", // Applied to Business, Mathematics and Computer Science
+    degree: "Postgraduate",
+    type: "Data Analytics and Artificial Intelligence",
     img: "/images/institution/fnat.jpg",
     startDate: "2026/01",
     endDate: "2026/12",
@@ -21,7 +21,7 @@ const professionalExperience = [
   {
     id: 1,
     name: "R-Dias",
-    img: "/images/institution/rdias.jpeg",
+    img: "/images/institution/rdias.png",
     periods: [
       {
         id: 1,
@@ -45,7 +45,6 @@ const professionalExperience = [
           "Enabled faster, data-driven decision-making through analytical dashboards and structured data pipelines.",
           "Increased operational efficiency by more than 40% through workflow automation.",
           "Led the creation of a store expansion forecasting project in a web application, supporting strategic business decisions and amplifying previous projects more than 2 times.",
-          "Developed a Market Basket Analysis algorithm to identify purchasing patterns and product associations in the supermarket context.",
         ],
       },
     ],

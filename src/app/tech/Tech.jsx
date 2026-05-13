@@ -16,7 +16,7 @@ const Tech = () => {
   return (
     <section id={style.tech}>
       <div className={style.tech__header}>
-        <h3>My Tech stack</h3>
+        <h3 id="technologies">Technologies</h3>
       </div>
       <div className={style.tech__body}>
         <div className={style.tech__body__cards}>
