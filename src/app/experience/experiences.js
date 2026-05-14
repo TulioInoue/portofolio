@@ -40,7 +40,7 @@ const professionalExperience = [
         level: "junior",
         role: "Data Cientist & Full Stack Developer",
         startDate: "2024/04",
-        endDate: "2024/08",
+        endDate: "2024/11",
         description: [
           "Enabled faster, data-driven decision-making through analytical dashboards and structured data pipelines.",
           "Increased operational efficiency by more than 40% through workflow automation.",
