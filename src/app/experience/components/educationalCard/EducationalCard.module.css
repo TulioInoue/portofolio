@@ -52,12 +52,13 @@
 .educationalCard__body_icon {
   position: absolute;
   align-self: center;
-  bottom: -20px;
-  padding: 10px;
+  top: -15px;
+  padding: 7.5px;
   border-radius: 50%;
   background-color: var(--primary-light-color);
 }
 
 .educationalCard__body_icon i {
   font-weight: bold;
+  display: flex;
 }

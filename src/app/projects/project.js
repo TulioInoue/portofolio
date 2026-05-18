@@ -1,4 +1,4 @@
-export const projects = [
+export const project = [
   {
     imgSrc: "/images/projects/diabetes_classification.png",
     imgAlt: "Diabetes classfication project",
@@ -34,7 +34,7 @@ export const projects = [
       {
         icon: "fi fi-rr-browser",
         link: "http://diabetes-frontend.s3-website.us-east-2.amazonaws.com/about",
-        name: "project",
+        name: "view",
       },
     ],
   },
@@ -71,7 +71,7 @@ export const projects = [
       {
         icon: "fi fi-rr-browser",
         link: "http://ecolungs-frontend.s3-website.us-east-2.amazonaws.com/about",
-        name: "project",
+        name: "view",
       },
     ],
   },
