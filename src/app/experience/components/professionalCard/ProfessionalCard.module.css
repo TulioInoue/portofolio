@@ -30,7 +30,7 @@
   display: grid;
   grid-template-rows: 1fr min-content;
   gap: 1rem;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
   min-height: 380px;
   position: relative;
 }
