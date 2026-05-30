@@ -33,7 +33,7 @@ export const project = [
       },
       {
         icon: "fi fi-rr-browser",
-        link: "http://diabetes-frontend.s3-website.us-east-2.amazonaws.com/about",
+        link: "https://diabetes.tulio-inoue.com/about",
         name: "view",
       },
     ],
@@ -70,7 +70,7 @@ export const project = [
       },
       {
         icon: "fi fi-rr-browser",
-        link: "http://ecolungs-frontend.s3-website.us-east-2.amazonaws.com/about",
+        link: "https://ecolungs.tulio-inoue.com/about",
         name: "view",
       },
     ],
@@ -104,12 +104,12 @@ export const project = [
     links: [
       {
         icon: "fi fi-brands-github",
-        link: "https://github.com/TulioInoue/diabetes_frontend",
+        link: "https://github.com/TulioInoue/Xray_frontend",
         name: "code",
       },
       {
         icon: "fi fi-rr-browser",
-        link: "http://chest-xray-frontend.s3-website.us-east-2.amazonaws.com/about",
+        link: "https://chest-xray.tulio-inoue.com/about",
         name: "view",
       },
     ],

@@ -80,7 +80,6 @@
 .projectCard__links {
   display: flex;
   gap: 1rem;
-  /* padding: 1rem; */
 }
 
 .projectCard__links a {
