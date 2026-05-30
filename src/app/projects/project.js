@@ -1,8 +1,8 @@
 export const project = [
   {
     imgSrc: "/images/projects/diabetes_classification.png",
-    imgAlt: "Diabetes classfication project",
-    name: "Diabetes classfication",
+    imgAlt: "Diabetes classification project",
+    name: "Diabetes classification",
     description:
       "Interface of a study for diabetes prevention that allows user interaction with model.",
     technologies: {
@@ -71,6 +71,45 @@ export const project = [
       {
         icon: "fi fi-rr-browser",
         link: "http://ecolungs-frontend.s3-website.us-east-2.amazonaws.com/about",
+        name: "view",
+      },
+    ],
+  },
+  {
+    imgSrc: "/images/projects/chest_xray_classification.png",
+    imgAlt: "Chest X-ray classification project",
+    name: "Chest X-ray classification",
+    description:
+      "Interface of a study for X-ray classification that allows user interaction with model.",
+    technologies: {
+      "Infrastructures and DevOps": ["Lambda", "API Gateway", "S3", "Github"],
+      "Full Stack developer": [
+        "HTML",
+        "CSS",
+        "React",
+        "TypeScript",
+        "echarts for react",
+      ],
+      "Data Science": [
+        "Python",
+        "scikit-learn",
+        "matplotlib",
+        "numpy",
+        "seaborn",
+        "pandas",
+        "polars",
+        "joblib",
+      ],
+    },
+    links: [
+      {
+        icon: "fi fi-brands-github",
+        link: "https://github.com/TulioInoue/diabetes_frontend",
+        name: "code",
+      },
+      {
+        icon: "fi fi-rr-browser",
+        link: "http://chest-xray-frontend.s3-website.us-east-2.amazonaws.com/about",
         name: "view",
       },
     ],
